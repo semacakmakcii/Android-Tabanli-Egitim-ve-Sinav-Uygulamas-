@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="tr.edu.fsm.javaprogramingapp.MainActivity">
+
+    <Button
+
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/topic_id"
+        android:background="@drawable/topic"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn Java Programming"
+        android:id="@+id/textView"
+        android:fontFamily="serif"
+        tools:fontFamily="serif-monospace"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="23sp"
+        android:layout_above="@+id/topic_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/video_id"
+        android:background="@drawable/videos"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/quiz_id"
+        android:background="@drawable/quiz"
+        android:layout_alignBaseline="@+id/info_id"
+        android:layout_alignBottom="@+id/info_id"
+        android:layout_alignLeft="@+id/topic_id"
+        android:layout_alignStart="@+id/topic_id" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/info_id"
+        android:background="@drawable/info"
+        android:layout_marginTop="95dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/video_id"
+        android:layout_alignStart="@+id/video_id" />
+
+    <TextView
+        android:text="   Konular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/topic_id"
+        android:layout_alignStart="@+id/topic_id" />
+
+    <TextView
+        android:text="  Videolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/video_id"
+        android:layout_alignRight="@+id/info_id"
+        android:layout_alignEnd="@+id/info_id" />
+
+    <TextView
+        android:text="İnfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/quiz_id"
+        android:layout_alignLeft="@+id/info_id"
+        android:layout_alignStart="@+id/info_id"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:text="   Quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/quiz_id"
+        android:layout_alignRight="@+id/quiz_id"
+        android:layout_alignEnd="@+id/quiz_id"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp" />
+
+
+</RelativeLayout>

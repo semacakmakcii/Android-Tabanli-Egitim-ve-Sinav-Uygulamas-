@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tr.edu.fsm.javaprogramingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/parse_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/parse_app_id" />
+
+        <activity android:name=".Splash"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".konu.KonuActivity"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity android:name=".konu.Aciklamalar">
+
+        </activity>
+        <activity android:name=".video.VideoActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".video.VideoAciklamalar"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".quiz.QuizActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".quiz.QuizSorularActivity">
+           </activity>
+    </application>
+
+
+</manifest>
